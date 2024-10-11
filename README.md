@@ -6,10 +6,12 @@ https://habr.com/ru/articles/843288/ - добить на планшет синх
 
 ```mermaid
 flowchart TB
-    start_sequence((s57c1 = 1)) --> gather_ingredients{Уступка?}
-    gather_ingredients --> bread[Изменение адреса вещания]
-    bread -->|Нет| get_bread{Get Bread}
-    bread -->|Да| do_i_peanut_butter[Do I have Peanut Butter?]
+    start_sequence((s57c1 = 1)) --> ustupka[Уступка]
+    ustupka --> address[Изменение адреса]
+    address --> date[Дата НОУ]
+    date --> changeArea{Среда меняется?}
+    changeArea -->|Нет| changeTerr{Изменение связано с территорией}
+    changeArea -->|Да| newArea[Новая среда вещания]
     get_bread -->   do_i_peanut_butter
     do_i_peanut_butter -->|No| get_peanut_butter{Get Peanut Butter}
     do_i_peanut_butter -->|Yes| assemble{Assemble Sandwich}
