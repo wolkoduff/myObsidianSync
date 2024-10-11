@@ -18,6 +18,7 @@ flowchart TB
     nev --> |Аналоговая| analog{Есть конкурсные города?}
     nev --> |Цифровая| changeTerr{Изменение связано с территорией}
     analog --> changeTerr{Изменение связано с территорией и частотами?}
+    changeTerr --> get_bread
     get_bread -->   do_i_peanut_butter
     do_i_peanut_butter -->|No| get_peanut_butter{Get Peanut Butter}
     do_i_peanut_butter -->|Yes| assemble{Assemble Sandwich}
