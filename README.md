@@ -24,3 +24,5 @@ flowchart TB
     get_peanut_butter --> assemble{Assemble Sandwich}
     assemble --> end_sequence((END))
 ```
+
+Вещание будет происходить в нескольких регионах - заменить на будет происходить в нескольких регионах
