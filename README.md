@@ -12,9 +12,12 @@ flowchart TB
     date --> changeArea{Среда меняется?}
     changeArea -->|Нет| changeTerr{Изменение связано с территорией}
     changeArea -->|Да| newArea[Новая среда вещания]
-    newArea -->|Спутник| 
-    newArea -->|Эфирка|
-    newArea -->|Кабель/Универсалка (чистая)|
+    newArea -->|Спутник| changeTerr{Изменение связано с территорией}
+    newArea -->|Эфирка| nev{Какой вид эфирного вещания}
+    newArea -->|Кабель/Универсалка чистая| changeTerr{Изменение связано с территорией}
+    nev --> |Аналоговая| analog{Есть конкурсные города?}
+    nev --> |Цифровая| changeTerr{Изменение связано с территорией}
+    analog --> changeTerr{Изменение связано с территорией и частотами?}
     get_bread -->   do_i_peanut_butter
     do_i_peanut_butter -->|No| get_peanut_butter{Get Peanut Butter}
     do_i_peanut_butter -->|Yes| assemble{Assemble Sandwich}
