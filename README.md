@@ -33,9 +33,9 @@ flowchart TB
 flowchart TB
     start_sequence((s57c1 = 1)) --> concept[Изменение связано с ПН/КВ и наименованием канала]
     concept --> |ПН/КВ и наименование канала|changeSmiVolume[Изменение ПН/КВ подразумевает изменение объёмов СМИ?]
-    concept --> |Только наименование канала|address[Изменение адреса]
+    concept --> |Только наименование канала|next[Следующий экран]
     concept --> |Только ПН/КВ|changeSmiVolume[Изменение ПН/КВ подразумевает изменение объёмов СМИ?]
-    concept --> |Нет|next[Изменение адреса]
+    concept --> |Нет|next[Следующий экран]
     changeSmiVolume
     changeTerr --> get_bread
     get_bread -->   do_i_peanut_butter
