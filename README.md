@@ -31,18 +31,12 @@ flowchart TB
 
 ```mermaid
 flowchart TB
-    start_sequence((s57c1 = 1)) --> ustupka[Уступка]
-    ustupka --> address[Изменение адреса]
-    address --> date[Дата НОУ]
-    date --> changeArea{Среда меняется?}
-    changeArea -->|Нет| changeTerr{Изменение связано с территорией}
-    changeArea -->|Да| newArea[Новая среда вещания]
-    newArea -->|Спутник| changeTerr{Изменение связано с территорией}
-    newArea -->|Эфирка| nev{Какой вид эфирного вещания}
-    newArea -->|Кабель/Универсалка чистая| changeTerr{Изменение связано с территорией}
-    nev --> |Аналоговая| analog{Есть конкурсные города?}
-    nev --> |Цифровая| changeTerr{Изменение связано с территорией}
-    analog --> changeTerr{Изменение связано с территорией и частотами?}
+    start_sequence((s57c1 = 1)) --> concept[Изменение связано с ПН/КВ и наименованием канала]
+    concept --> |ПН/КВ и наименование канала|changeSmiVolume[Изменение ПН/КВ подразумевает изменение объёмов СМИ?]
+    concept --> |Только наименование канала|address[Изменение адреса]
+    concept --> |Только ПН/КВ|changeSmiVolume[Изменение ПН/КВ подразумевает изменение объёмов СМИ?]
+    concept --> |Нет|next[Изменение адреса]
+    changeSmiVolume
     changeTerr --> get_bread
     get_bread -->   do_i_peanut_butter
     do_i_peanut_butter -->|No| get_peanut_butter{Get Peanut Butter}
