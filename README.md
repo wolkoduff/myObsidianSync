@@ -32,15 +32,10 @@ flowchart TB
 ```mermaid
 flowchart TB
     start_sequence((s57c1 = 1)) --> concept[Изменение связано с ПН/КВ и наименованием канала]
-    concept --> |ПН/КВ и наименование канала|changeSmiVolume[Изменение ПН/КВ подразумевает изменение объёмов СМИ?]
+    concept --> |ПН/КВ и наименование канала|changeSmiVolume{Изменение ПН/КВ подразумевает изменение объёмов СМИ?}
     concept --> |Только наименование канала|next[Следующий экран]
-    concept --> |Только ПН/КВ|changeSmiVolume[Изменение ПН/КВ подразумевает изменение объёмов СМИ?]
+    concept --> |Только ПН/КВ|changeSmiVolume{Изменение ПН/КВ подразумевает изменение объёмов СМИ?}
     concept --> |Нет|next[Следующий экран]
-    changeSmiVolume
-    changeTerr --> get_bread
-    get_bread -->   do_i_peanut_butter
-    do_i_peanut_butter -->|No| get_peanut_butter{Get Peanut Butter}
-    do_i_peanut_butter -->|Yes| assemble{Assemble Sandwich}
-    get_peanut_butter --> assemble{Assemble Sandwich}
-    assemble --> end_sequence((END))
+    changeSmiVolume --> |Да|changeSmi{Изменение связано с добавлением или исключением СМИ?}
+    changeSmiVolume --> |Нет|next[Следующий экран]
 ```
