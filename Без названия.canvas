@@ -1,11 +1,13 @@
 {
 	"nodes":[
+		{"id":"5f4efff1b76794d9","x":-571,"y":222,"width":400,"height":400,"type":"file","file":"Когда должно быть ФКК.md"},
 		{"id":"f433748d4177802d","type":"text","text":"Проверить поведение при некоторых выбранных чек-боксах + сверка часов для работ","x":-44,"y":-460,"width":250,"height":120},
-		{"id":"f4739b3508817f2d","x":-44,"y":-260,"width":400,"height":920,"color":"6","type":"file","file":"Чек-лист переходов до экрана решения.md"},
+		{"id":"f4739b3508817f2d","type":"file","file":"Чек-лист переходов до экрана решения.md","x":-44,"y":-260,"width":400,"height":920,"color":"6"},
 		{"id":"f03ee24e4b7ca1ec","type":"text","text":"Тестирование ветки внесения изменений по лицензиям на вещание","x":-500,"y":-180,"width":250,"height":100,"color":"2"}
 	],
 	"edges":[
 		{"id":"3816bc2fb57628d8","fromNode":"f03ee24e4b7ca1ec","fromSide":"right","toNode":"f433748d4177802d","toSide":"left"},
-		{"id":"b591c64098bbc7e9","fromNode":"f03ee24e4b7ca1ec","fromSide":"right","toNode":"f4739b3508817f2d","toSide":"left"}
+		{"id":"b591c64098bbc7e9","fromNode":"f03ee24e4b7ca1ec","fromSide":"right","toNode":"f4739b3508817f2d","toSide":"left"},
+		{"id":"45da25df569152ff","fromNode":"f03ee24e4b7ca1ec","fromSide":"bottom","toNode":"5f4efff1b76794d9","toSide":"top"}
 	]
 }
