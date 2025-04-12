@@ -12,4 +12,8 @@ local defaultData = {
 	["SelectedTowers"] = {"Cannon"},
 	["OwnedTowers"] = {"Cannon", "Killer"}
 }
+
+ReplicatedStorage.GetData.OnServerInvoke = function(player: Player)
+	return defaultData
+end
 ```
