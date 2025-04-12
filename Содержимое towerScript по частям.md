@@ -1,6 +1,6 @@
 Часть 1
 ```lua
-    local TowerShop = {
+local TowerShop = {
 	-- перечислить имена каждой башни T1 версии, указав для них нужные imageId
 	["Cannon"] = {
 		["Name"] = "Cannon",
