@@ -124,6 +124,7 @@ local function updateItems()
 		newButton.TowerName.Text = tower.Name
 		newButton.Image = tower.ImageAsset
 		newButton.Visible = true
+		newButton.LayoutOrder = tower.Price
 		newButton.Parent = itemsFrame
 		
 		local status = getItemStatus(tower.Name)

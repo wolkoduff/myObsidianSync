@@ -11,12 +11,13 @@
 		{"id":"1a8ca21c85048373","type":"text","text":"textLabel\n - [ ] Добавить textLabel\n\t - [ ] Название \"stars\" или что будет как игровая валюта для покупки башен\n\t- [ ] Размер .5, 0, 0.1, 0\n\t- [ ] Позиция 0, 0, 0.9, 0\n\t- [ ] Прозрачность 1\n\t- [ ] Задать нужный шрифт\n\t- [ ] TextStrokeTransparency = 0\n\t- [ ] Цвет белый\n\t- [ ] TextScaled\n\t- [ ] TextXAlignment = Left\n\t- [ ] Текст задаём как для игровой валюты + 0","x":237,"y":-1060,"width":379,"height":460},
 		{"id":"fe5df442c6336854","type":"text","text":"textLabel\n - [ ] Добавить textLabel\n\t - [ ] Название limit\n\t- [ ] Размер .5, 0, 0.1, 0\n\t- [ ] Позиция 0.5, 0, 0.9, 0\n\t- [ ] Прозрачность 1\n\t- [ ] Задать нужный шрифт\n\t- [ ] TextStrokeTransparency = 0\n\t- [ ] Цвет белый\n\t- [ ] TextScaled\n\t- [ ] TextXAlignment = Right\n\t- [ ] 0/предельное значение башен, что пойдут в игру","x":244,"y":-544,"width":379,"height":400},
 		{"id":"175a9eaf42c52f1f","type":"text","text":"textLabel\n - [ ] Добавить textLabel\n\t- [ ] BGColor 0, 0, 0\n\t- [ ] Размер 1, 0, 0.1, 0\n\t- [ ] Прозрачность 0.2\n\t- [ ] Накинуть UICorner\n\t- [ ] Выбрать шрифт\n\t- [ ] Цвет текста - белый\n\t- [ ] Название \"Магазин\"\n\t- [ ] textScaled\n","x":244,"y":-1860,"width":393,"height":340},
-		{"id":"f0c0ed68567c38a5","x":67,"y":1406,"width":453,"height":497,"type":"text","text":"Время скриптов!\n- [ ] Башни из TD переносим в ReplicatedStorage\n- [ ] Создаём новый moduleScript\n- [ ] Переименовываем его в TowerShop\n- [ ] Заполняем таблицу внутри скрипта (Часть 1)\n- [ ] В ShopGui добавляем localScript\n- [ ] Переименовываем его в shopClient\n- [ ] Добавляем к магазину блок в workpace\n- [ ] Наполняем shopClient кодом\n- [ ] После этого создаём в ServerScriptService серверный скрипт Script и переименовываем в shopServer\n- [ ] Создаём в ReplicatedStorage RemoteFunction с именем GetData\n- [ ] Прописываем его вызов в shopServer\n- [ ] Возвращаемся в shopClient и дописываем его дальше (Часть 2)\n- [ ] После этого исправим ошибку, чтобы кнопки не дублировались, при каждом открытии (раздуваются, а не сбрасываются)\n- [ ] После этого прописываем обработку покупки и экипировки башен (Часть 3)\n- [ ] "},
+		{"id":"f0c0ed68567c38a5","x":67,"y":1406,"width":453,"height":754,"type":"text","text":"Время скриптов!\n- [ ] Башни из TD переносим в ReplicatedStorage\n- [ ] Создаём новый moduleScript\n- [ ] Переименовываем его в TowerShop\n- [ ] Заполняем таблицу внутри скрипта (Часть 1)\n- [ ] В ShopGui добавляем localScript\n- [ ] Переименовываем его в shopClient\n- [ ] Добавляем к магазину блок в workpace\n- [ ] Наполняем shopClient кодом\n- [ ] После этого создаём в ServerScriptService серверный скрипт Script и переименовываем в shopServer\n- [ ] Создаём в ReplicatedStorage RemoteFunction с именем GetData\n- [ ] Прописываем его вызов в shopServer\n- [ ] Возвращаемся в shopClient и дописываем его дальше (Часть 2)\n- [ ] После этого исправим ошибку, чтобы кнопки не дублировались, при каждом открытии (раздуваются, а не сбрасываются)\n- [ ] После этого прописываем обработку покупки и экипировки башен (Часть 3)\n- [ ] После этого дописываем обработку нажатия на кнопку\n- [ ] "},
 		{"id":"916da5f4827e1cd5","x":680,"y":1052,"width":700,"height":354,"type":"file","file":"Содержимое towerScript по частям.md"},
 		{"id":"714aa7946739e0d2","x":1560,"y":1052,"width":700,"height":645,"type":"file","file":"Содержимое shopClient по частям.md"},
 		{"id":"c0199d11c4c69fde","x":2360,"y":1052,"width":700,"height":440,"type":"file","file":"shopServer.md"},
 		{"id":"fc32d5c540823e8b","x":1560,"y":1840,"width":700,"height":1120,"type":"file","file":"Содержимое shopClient по частям.md"},
-		{"id":"40177a074e48e9f5","type":"file","file":"Содержимое shopClient по частям.md","x":1560,"y":3040,"width":700,"height":1720}
+		{"id":"40177a074e48e9f5","type":"file","file":"Содержимое shopClient по частям.md","x":1560,"y":3040,"width":700,"height":1740},
+		{"id":"2fdf8256d01ea0b7","type":"file","file":"Содержимое shopClient по частям.md","x":1560,"y":4840,"width":700,"height":1740}
 	],
 	"edges":[
 		{"id":"50aa3f2152f5ee0f","fromNode":"1ec4956ad84448dc","fromSide":"right","toNode":"175a9eaf42c52f1f","toSide":"left"},
@@ -32,6 +33,8 @@
 		{"id":"6d7ce9aeae457867","fromNode":"f0c0ed68567c38a5","fromSide":"right","toNode":"916da5f4827e1cd5","toSide":"left"},
 		{"id":"613eb80612d8ef16","fromNode":"f0c0ed68567c38a5","fromSide":"right","toNode":"714aa7946739e0d2","toSide":"left"},
 		{"id":"2dd39382a8ec8c01","fromNode":"f0c0ed68567c38a5","fromSide":"right","toNode":"c0199d11c4c69fde","toSide":"left"},
-		{"id":"9db1cbd678228a68","fromNode":"f0c0ed68567c38a5","fromSide":"right","toNode":"fc32d5c540823e8b","toSide":"left"}
+		{"id":"9db1cbd678228a68","fromNode":"f0c0ed68567c38a5","fromSide":"right","toNode":"fc32d5c540823e8b","toSide":"left"},
+		{"id":"61d88e5fb4326075","fromNode":"f0c0ed68567c38a5","fromSide":"right","toNode":"40177a074e48e9f5","toSide":"left"},
+		{"id":"30b27d4f73a676d4","fromNode":"f0c0ed68567c38a5","fromSide":"right","toNode":"2fdf8256d01ea0b7","toSide":"left"}
 	]
 }
