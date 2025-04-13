@@ -7,17 +7,18 @@
 		{"id":"29822a1291272da6","type":"text","text":"UIListLayout\n- [ ] CellPadding 0, 10, 0, 10\n- [ ] CellSize = 0.2, 0, 0.4, 0\n- [ ] Horizontal Alignment = center\n- [ ] FillDirection = Horizontal","x":847,"y":728,"width":359,"height":192},
 		{"id":"f0c0ed68567c38a5","type":"text","text":"Время скриптов!\n- [ ] Башни из TD переносим в ReplicatedStorage\n- [ ] Создаём новый moduleScript\n- [ ] Переименовываем его в TowerShop\n- [ ] Заполняем таблицу внутри скрипта (Часть 1)\n- [ ] В ShopGui добавляем localScript\n- [ ] Переименовываем его в shopClient\n- [ ] Добавляем к магазину блок в workpace\n- [ ] Наполняем shopClient кодом\n- [ ] После этого создаём в ServerScriptService серверный скрипт Script и переименовываем в shopServer\n- [ ] Создаём в ReplicatedStorage RemoteFunction с именем GetData\n- [ ] Прописываем его вызов в shopServer\n- [ ] Возвращаемся в shopClient и дописываем его дальше (Часть 2)\n- [ ] После этого исправим ошибку, чтобы кнопки не дублировались, при каждом открытии (раздуваются, а не сбрасываются)\n- [ ] После этого прописываем обработку покупки и экипировки башен (Часть 3)\n- [ ] После этого дописываем обработку нажатия на кнопку\n- [ ] ","x":67,"y":1406,"width":453,"height":754},
 		{"id":"916da5f4827e1cd5","type":"file","file":"Содержимое towerScript по частям.md","x":680,"y":1052,"width":700,"height":354},
-		{"id":"714aa7946739e0d2","type":"file","file":"Содержимое shopClient по частям.md","x":1560,"y":1052,"width":700,"height":645},
+		{"id":"714aa7946739e0d2","type":"file","file":"Содержимое shopClient по частям.md","x":1560,"y":1052,"width":700,"height":708},
 		{"id":"1ec4956ad84448dc","type":"text","text":"Что надо создать в 21 уроке TD\n- [ ] Создать ScreenGui новый\n- [ ] Назвать его shopGui\n- [ ] В него добавить фрейм\n\t- [ ] Размер: 0.8, 0, 0.8, 0\n\t- [ ] Позиция 0.1, 0, 0.1, 0\n\t- [ ] Прозрачность 0.8 (или подобрать под себя)\n\t- [ ] Переименовать в Container\n\t- [ ] Добавить UICorner для скругления углов рамки\n- [ ] Добавить текстовое поле\n- [ ] Добавить кнопку\n- [ ] Добавить текстовое поле (игровая валюта)\n- [ ] Добавить текстовое поле (лимит)\n- [ ] Добавить ScrollingFrame\n- [ ] По завершению настройки фрейма - выключаем его видимость\n- [ ] Время скриптов!","x":-940,"y":-160,"width":440,"height":560},
 		{"id":"fe5df442c6336854","type":"text","text":"textLabel\n - [ ] Добавить textLabel\n\t - [ ] Название limit\n\t- [ ] Размер .5, 0, 0.1, 0\n\t- [ ] Позиция 0.5, 0, 0.9, 0\n\t- [ ] Прозрачность 1\n\t- [ ] Задать нужный шрифт\n\t- [ ] TextStrokeTransparency = 0\n\t- [ ] Цвет белый\n\t- [ ] TextScaled\n\t- [ ] TextXAlignment = Right\n\t- [ ] 0/предельное значение башен, что пойдут в игру","x":244,"y":-544,"width":379,"height":400},
 		{"id":"1a8ca21c85048373","type":"text","text":"textLabel\n - [ ] Добавить textLabel\n\t - [ ] Название \"stars\" или что будет как игровая валюта для покупки башен\n\t- [ ] Размер .5, 0, 0.1, 0\n\t- [ ] Позиция 0, 0, 0.9, 0\n\t- [ ] Прозрачность 1\n\t- [ ] Задать нужный шрифт\n\t- [ ] TextStrokeTransparency = 0\n\t- [ ] Цвет белый\n\t- [ ] TextScaled\n\t- [ ] TextXAlignment = Left\n\t- [ ] Текст задаём как для игровой валюты + 0","x":237,"y":-1060,"width":379,"height":460},
 		{"id":"81c0cf32430d617b","type":"text","text":"textLabel\n - [ ] Добавить textLabel\n\t - [ ] Название Status\n\t- [ ] Размер 1, 0, 0.2, 0\n\t- [ ] Позиция 0, 0, 0.8, 0\n\t- [ ] Прозрачность 1\n\t- [ ] Задать нужный шрифт\n\t- [ ] Цвет Как в stars или игровой валюте\n\t- [ ] TextScaled\n\t- [ ]  TextStrokeTransparency = 0\n\t- [ ] TextStrokeColor3 = белый\n\t- [ ] Текст - 0 единиц игровой валюты\n","x":1616,"y":0,"width":379,"height":428},
 		{"id":"9da9e91d465b221b","type":"text","text":"Кнопка textButton\n- [ ] Добавляет textButton\n\t- [ ] Размер, 0.1, 0, 0.1, 0\n\t- [ ] Позиция 0.9, 0, 0, 0\n\t- [ ] Цвет фона красный\n\t- [ ] Прозрачность 0.4\n\t- [ ] Название Exit \n\t- [ ] Текст X\n\t- [ ] Цвет текста белый для выделения на красном фоне - это будет кнопка \"Закрыть\"\n\t- [ ] TextScaled\n","x":244,"y":-1480,"width":393,"height":388},
-		{"id":"c0199d11c4c69fde","type":"file","file":"shopServer.md","x":2360,"y":1052,"width":700,"height":488},
 		{"id":"175a9eaf42c52f1f","type":"text","text":"textLabel\n - [ ] Добавить textLabel\n\t- [ ] BGColor 0, 0, 0\n\t- [ ] Размер 1, 0, 0.1, 0\n\t- [ ] Прозрачность 0.2\n\t- [ ] Накинуть UICorner\n\t- [ ] Выбрать шрифт\n\t- [ ] Цвет текста - белый\n\t- [ ] Название \"Магазин\"\n\t- [ ] textScaled\n","x":244,"y":-1860,"width":393,"height":340},
 		{"id":"fc32d5c540823e8b","type":"file","file":"Содержимое shopClient по частям.md","x":1560,"y":1840,"width":700,"height":1120},
 		{"id":"40177a074e48e9f5","type":"file","file":"Содержимое shopClient по частям.md","x":1560,"y":3040,"width":700,"height":1740},
-		{"id":"2fdf8256d01ea0b7","type":"file","file":"Содержимое shopClient по частям.md","x":1560,"y":4840,"width":700,"height":1740}
+		{"id":"2fdf8256d01ea0b7","type":"file","file":"Содержимое shopClient по частям.md","x":1560,"y":4840,"width":700,"height":1740},
+		{"id":"c0199d11c4c69fde","type":"file","file":"shopServer.md","x":2360,"y":1052,"width":700,"height":468},
+		{"id":"68accec8ad22a552","type":"file","file":"shopServer.md","x":2360,"y":1840,"width":700,"height":1440}
 	],
 	"edges":[
 		{"id":"50aa3f2152f5ee0f","fromNode":"1ec4956ad84448dc","fromSide":"right","toNode":"175a9eaf42c52f1f","toSide":"left"},
@@ -35,6 +36,7 @@
 		{"id":"2dd39382a8ec8c01","fromNode":"f0c0ed68567c38a5","fromSide":"right","toNode":"c0199d11c4c69fde","toSide":"left"},
 		{"id":"9db1cbd678228a68","fromNode":"f0c0ed68567c38a5","fromSide":"right","toNode":"fc32d5c540823e8b","toSide":"left"},
 		{"id":"61d88e5fb4326075","fromNode":"f0c0ed68567c38a5","fromSide":"right","toNode":"40177a074e48e9f5","toSide":"left"},
-		{"id":"30b27d4f73a676d4","fromNode":"f0c0ed68567c38a5","fromSide":"right","toNode":"2fdf8256d01ea0b7","toSide":"left"}
+		{"id":"30b27d4f73a676d4","fromNode":"f0c0ed68567c38a5","fromSide":"right","toNode":"2fdf8256d01ea0b7","toSide":"left"},
+		{"id":"1f7d078b226e69f3","fromNode":"c0199d11c4c69fde","fromSide":"bottom","toNode":"68accec8ad22a552","toSide":"top"}
 	]
 }
