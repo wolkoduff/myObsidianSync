@@ -18,7 +18,11 @@ ReplicatedStorage.GetData.OnServerInvoke = function(player: Player)
 end
 ```
 
+<<<<<<< HEAD
 Итоговый скрипт
+=======
+Полный скрипт
+>>>>>>> origin/main
 ```lua
 local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
