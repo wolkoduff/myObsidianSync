@@ -1,7 +1,9 @@
 {
 	"nodes":[
-		{"id":"f9597069ed785fb3","x":-220,"y":-520,"width":400,"height":400,"type":"file","file":"round module.md"},
-		{"id":"c463ac2dc49da8ae","x":-580,"y":-520,"width":250,"height":60,"type":"text","text":"Исправляем ошибку в голосовании\n"}
+		{"id":"c463ac2dc49da8ae","x":-580,"y":-520,"width":250,"height":200,"type":"text","text":"- [ ] Исправляем ошибку в голосовании\n- [ ] \n"},
+		{"id":"f9597069ed785fb3","x":-220,"y":-520,"width":400,"height":400,"type":"file","file":"round module.md"}
 	],
-	"edges":[]
+	"edges":[
+		{"id":"9e7a9a066cda8762","fromNode":"c463ac2dc49da8ae","fromSide":"right","toNode":"f9597069ed785fb3","toSide":"left"}
+	]
 }
