@@ -98,3 +98,19 @@ game:BindToClose(function()
 	end
 end)
 ```
+
+```lua
+local RunService = game:GetService("RunService")
+...
+game:BindToClose(function() 
+	if not RunService:IsStudio() then
+		for index, player in pairs(Players:GetPlayers())
+			task.spawn(function() 
+				SaveData(player)
+			end)
+		end
+	else
+		print("Shutting down inside studio")
+	end
+end)
+```
