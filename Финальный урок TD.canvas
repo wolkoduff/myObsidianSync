@@ -1,9 +1,15 @@
 {
 	"nodes":[
-		{"id":"c463ac2dc49da8ae","x":-580,"y":-520,"width":250,"height":200,"type":"text","text":"- [ ] Исправляем ошибку в голосовании\n- [ ] \n"},
-		{"id":"f9597069ed785fb3","x":-220,"y":-520,"width":400,"height":400,"type":"file","file":"round module.md"}
+		{"id":"f9597069ed785fb3","x":-220,"y":-520,"width":400,"height":400,"type":"file","file":"round module.md"},
+		{"id":"064e4df0580abdd8","x":260,"y":-520,"width":760,"height":1200,"color":"1","type":"file","file":"shopServer module.md"},
+		{"id":"f1efbe9e34a75de4","x":260,"y":760,"width":760,"height":740,"color":"4","type":"file","file":"shopServer module.md"},
+		{"id":"c463ac2dc49da8ae","x":-880,"y":-520,"width":390,"height":900,"type":"text","text":"- [ ] Исправляем ошибку в голосовании\n- [ ] Допиливаем shopServer\n- [ ] Для того, чтобы работало всё исправно, включаем в лобби комнате в настройках безопасности (settings/security) поддержку API-лок, или Enable Studio Access to API Services\n- [ ] После этого начинаем прописывать нашу функцию загрузки данных игроков\n- [ ] После прописи функций сохранения и загрузки данных игрока - заменяем `defaultData` на `data[player.UserId]`\n- [ ] Старое defaultData удаляем, т.к. содержимое его мы перенесли в функцию получения данных по игроку\n- [ ] Допилим сохранение данных в скрипте после функции сохранения данных в БД"},
+		{"id":"e2ff9d37ebbb1289","x":258,"y":1591,"width":762,"height":769,"color":"2","type":"file","file":"shopServer module.md"}
 	],
 	"edges":[
-		{"id":"9e7a9a066cda8762","fromNode":"c463ac2dc49da8ae","fromSide":"right","toNode":"f9597069ed785fb3","toSide":"left"}
+		{"id":"9e7a9a066cda8762","fromNode":"c463ac2dc49da8ae","fromSide":"right","toNode":"f9597069ed785fb3","toSide":"left"},
+		{"id":"e794c43746288aa1","fromNode":"c463ac2dc49da8ae","fromSide":"right","toNode":"064e4df0580abdd8","toSide":"left","color":"1"},
+		{"id":"2d8a0e7c608e74a1","fromNode":"c463ac2dc49da8ae","fromSide":"right","toNode":"f1efbe9e34a75de4","toSide":"left","color":"4"},
+		{"id":"719e82b07114fe32","fromNode":"c463ac2dc49da8ae","fromSide":"right","toNode":"e2ff9d37ebbb1289","toSide":"left","color":"2"}
 	]
 }
